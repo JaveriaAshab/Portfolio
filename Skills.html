@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="Skills.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body data-nav="false">
+    <header>
+        <div class="nav-links">
+            <a class="nav-link" href="About.html">About Me</a>
+            <a class="nav-link" href="Skills.html">Skills</a>
+            <a class="nav-link" href="Projects.html">Projects</a>
+            <a class="nav-link" href="Contact.html">Contact</a>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </header>
+    <div class="image">
+    <div class="card-groups">
+        <!-- word -->
+    <div class="card-group" data-index="0" data-status="active">
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <h2>Microsoft Word</h2>
+    </div>
+    <!-- excel -->
+    <div class="card-group" data-index="1" data-status="unknown">
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <h2>Microsoft Excel</h2>
+    </div>
+    <!-- powerpoint -->
+    <div class="card-group" data-index="2" data-status="unknown">
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <h2>Microsoft PowerPoint</h2>
+    </div>
+    <!-- onenote -->
+    <div class="card-group" data-index="3" data-status="unknown">
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <h2>Microsoft OneNote</h2>
+    </div>
+    <!-- html -->
+    <div class="card-group" data-index="4" data-status="unknown">
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <h2>HTML</h2>
+    </div>
+    <!-- css -->
+    <div class="card-group" data-index="5" data-status="unknown">
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <h2>CSS</h2>
+    </div>
+    <!-- JavaScript -->
+    <div class="card-group" data-index="6" data-status="unknown">
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <h2>JavaScript</h2>
+    </div>
+    <!-- jQuery -->
+    <div class="card-group" data-index="7" data-status="unknown">
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <h2>jQuery</h2>
+    </div>
+    <!-- UI/UX -->
+    <div class="card-group" data-index="8" data-status="unknown">
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <div class="smallcard card"></div>
+        <div class="bigcard card"></div>
+        <h2>UI/UX</h2>
+    </div>
+    </div>
+    <div class="card-swipe-button">
+        <button id="left" onclick="handleleftclick()">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button id="right" onclick="handlerightclick()">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+</div>
+    <button id="nav-toggle" type="button" onclick="togglenav()">
+        <i class="open fa-solid fa-bars"></i>
+        <i class="close fa-solid fa-xmark"></i>
+    </button>
+    <nav>
+        <div id="nav-links">
+            <a class="nav-link" href="About.html">
+                <h2 id="nav-link-label">About me</h2>
+                <img class="nav-link-image" src="Images/clay-banks-bQy5CN98RiM-unsplash.jpg">
+            </a>
+            <a class="nav-link" href="Skills.html">
+                <h2 id="nav-link-label">Skills</h2>
+                <img class="nav-link-image" src="Images/daniel-chekalov-OxU08SFhPbI-unsplash.jpg">
+            </a>
+            <a class="nav-link" href="Projects.html">
+                <h2 id="nav-link-label">Projects</h2>
+                <img class="nav-link-image" src="Images/octavian-dan-b21Ty33CqVs-unsplash.jpg">
+            </a>
+            <a class="nav-link" href="Contact.html">
+                <h2 id="nav-link-label">Contact</h2>
+                <img class="nav-link-image" src="Images/luca-bravo-9l_326FISzk-unsplash.jpg">
+            </a>
+        </div>
+    </nav>
+    <script>
+        const togglenav = () => {
+            document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
+        }
+        let activeIndex = 0;
+        const groups = document.getElementsByClassName("card-group");
+        const handlerightclick = () => {
+            const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
+            const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
+            nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
+
+            currentGroup.dataset.status = "after";
+            nextGroup.dataset.status = "becoming-active-from-before";
+            setTimeout(() => {
+            nextGroup.dataset.status = "active";
+                activeIndex = nextIndex;
+            });
+        }
+        const handleleftclick = () => {
+            const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
+            const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
+            nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
+
+            currentGroup.dataset.status = "before";
+            nextGroup.dataset.status = "becoming-active-from-after"
+            setTimeout(() => {
+            nextGroup.dataset.status = "active";
+                activeIndex = nextIndex;
+            });
+        }
+    </script>
+</body>
+</html>

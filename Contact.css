@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact{
+    margin-left: 150px;
+}
+form {
+    color: white;
+    font-family: 'poppins', sans-serif;
+    margin-top: 23px;
+    margin-left: 693px;
+    font-size: 17px;
+}
+input {
+    height: 30px;
+    width: 340px;
+    padding-left: 8px;
+    font-family: 'poppins', sans-serif;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+#message{
+    height: 100px;
+    padding-bottom: 70px;
+    padding-left: 8px;
+}
+#submit{
+    margin-top: 11px;
+    width: 70px;
+    height: 37px;
+    padding-left: 1px;
+    font-weight: bold;
+}
+.contact > h1 {
+    margin-right: 533px;
+    margin-top: 192px;
+    font-size: 23px;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding-top: 2px;
+    text-align: center;
+}
+.contact > img{
+    background-size: cover;
+    background-position: center;
+    box-shadow: -5px -4px 70px rgb(0, 0, 0);
+    height: 397px;
+    width: 477px;
+    border-radius: 15px;
+    float: left;
+    margin-left: 127px;
+    margin-top: 192px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="Skills.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="Projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="Project.js"></script>
+</head>
+<body data-nav="false">
+    <header>
+        <div class="nav-links">
+            <a class="nav-link" href="About.html">About Me</a>
+            <a class="nav-link" href="Skills.html">Skills</a>
+            <a class="nav-link" href="Projects.html">Projects</a>
+            <a class="nav-link" href="Contact.html">Contact</a>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </header>
+    <div class="image">
+        <div class="project">
+            <h1 class="hidden">Recreated a Website.</h1>
+            <div class="projectss hidden"></div>
+            <div class="projectname hidden">
+            <h2 class="hidden">Hughes&Co</h2>
+            </div>
+            <div class="projectnametext hidden">
+            <h1 class="hidden">Hughes&Co</h1>
+            </div>
+            <div class="projectss2 hidden"></div>
+            <div class="projectnametext2 hidden">
+                <h1 class="hidden">A dupe of original</h1>
+            </div>
+            <div class="projectss3 hidden"></div>
+            <div class="projectnametext3 hidden">
+                <h1 class="hidden">Designed with an aim...</h1>
+            </div>
+            <div class="projectss4 hidden"></div>
+            <div class="projectnametext4 hidden">
+                <h1 class="hidden">to be as precise as possible.</h1>
+            </div>
+            <!-- GK Quiz -->
+            <div class="projectnametext5a">
+                <h1 class="hidden">The General Knowledge Quiz</h1>
+            </div>
+            <div class="projectss5 hidden"></div>
+            <div class="projectnametext5">
+                <h1 class="hidden">A game of Quiz</h1>
+            </div>
+            <div class="projectss6 hidden"></div>
+            <div class="projectnametext6">
+                <h1 class="hidden">With some certain rules to follow</h1>
+            </div>
+            <div class="projectss7 hidden"></div>
+            <div class="projectnametext7">
+                <h1 class="hidden">With some certain rules to follow</h1>
+            </div>
+            <!-- GK Quiz -->
+            <div class="projectnametext8a">
+                <h1 class="hidden">A fully functioning To-Do List</h1>
+            </div>
+            <div class="projectss8 hidden"></div>
+            <div class="projectnametext8">
+                <h1 class="hidden">A To-Do list Application</h1>
+            </div>
+            <div class="projectss9 hidden"></div>
+            <div class="projectnametext9">
+                <h1 class="hidden">With filters to filter between Completed & Uncompleted Tasks</h1>
+            </div>
+            <div class="projectss10 hidden"></div>
+            <div class="projectnametext10">
+                <h1 class="hidden">See the Completed...</h1>
+            </div>
+            <div class="projectss11 hidden"></div>
+            <div class="projectnametext11">
+                <h1 class="hidden">& Uncompleted tasks with an ease.</h1>
+            </div>
+            <!-- RPS Quiz -->
+            <div class="projectnametext12a">
+                <h1 class="hidden">Rock Paper Scissors</h1>
+            </div>
+            <div class="projectss12 hidden"></div>
+            <div class="projectnametext12">
+                <h1 class="hidden">A game of Rock Paper Scissors game</h1>
+            </div>
+            <!-- TTT Quiz -->
+            <div class="projectnametext13a">
+                <h1 class="hidden">Tic Tac Toe</h1>
+            </div>
+            <div class="projectss13 hidden"></div>
+            <div class="projectnametext13">
+                <h1 class="hidden">A game of Tic Tac Toe game</h1>
+            </div>
+        </div>
+    </div>
+    <button id="nav-toggle" type="button" onclick="togglenav()">
+        <i class="open fa-solid fa-bars"></i>
+        <i class="close fa-solid fa-xmark"></i>
+    </button>
+    <nav>
+        <div id="nav-links">
+            <a class="nav-link" href="About.html">
+                <h2 id="nav-link-label">About me</h2>
+                <img class="nav-link-image" src="Images/clay-banks-bQy5CN98RiM-unsplash.jpg">
+            </a>
+            <a class="nav-link" href="Skills.html">
+                <h2 id="nav-link-label">Skills</h2>
+                <img class="nav-link-image" src="Images/daniel-chekalov-OxU08SFhPbI-unsplash.jpg">
+            </a>
+            <a class="nav-link" href="Projects.html">
+                <h2 id="nav-link-label">Projects</h2>
+                <img class="nav-link-image" src="Images/octavian-dan-b21Ty33CqVs-unsplash.jpg">
+            </a>
+            <a class="nav-link" href="Contact.html">
+                <h2 id="nav-link-label">Contact</h2>
+                <img class="nav-link-image" src="Images/luca-bravo-9l_326FISzk-unsplash.jpg">
+            </a>
+        </div>
+    </nav>
+    <!-- JavaScript -->
+    <script>
+        const togglenav = () => {
+            document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
+        }
+    </script>
+</body>
+</html>

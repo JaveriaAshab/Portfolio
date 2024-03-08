@@ -1,0 +1,686 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+}
+.image{
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),url();
+    background-size: cover;
+    background-position: center 20%;
+    position: relative;
+    transition: transform 500ms cubic-bezier(.13, .53, .28, .97);
+}
+.card-swipe-button{
+    margin-left: 89vmin;
+    margin-top: 35vmin;
+    display: flex;
+    gap: 45px;
+    padding: 0vmin 4vmin;
+}
+.card-swipe-button > button {
+    height: 7vmin;
+    width: 7vmin;
+    font-size: 2.5vmin;
+    border: 0.4vmin solid rgb(200, 200, 200);
+    border-radius: 100%;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.fa-solid {
+    margin-top: 6px;
+}
+.card-group, .card, .card-groups{
+    aspect-ratio: 5 /7;
+}
+.card-group[data-status="unknown"]{
+    transform: scale(0);
+}
+.card-group[data-status="after"]{
+    transform: translateX(50%) scale(0);
+}
+.card-group[data-status="becoming-active-from-before"]{
+    transform: translateX(-50%) scale(0);
+    transition: none;
+}
+.card-group[data-status="active"]{
+    transition-delay: 300ms;
+}
+.card-group[data-status="becoming-active-from-after"]{
+    transform: translateX(50%) scale(0);
+    transition: none;
+}
+.card-group[data-status="before"]{
+    transform: translateX(-50%) scale(0);
+}
+.card{
+    background-color: rgba(128, 128, 128, 0.493);
+    position: absolute;
+    margin-left: 685px;
+    margin-top: 167px;
+    transition: transform 800ms cubic-bezier(.05, .43, .25, .95);
+}
+.card-group, .bigcard, .card-groups{
+    width: 30vmin;
+}
+.card-group{
+    transition: transform 200ms ease;
+}
+/* 1stcard */
+.bigcard{
+    width: 30vmin;
+    border-radius: 1vmin;
+}
+.smallcard{
+    width: 12vmin;
+    border-radius: 2vmin;
+    background-color: rgb(32, 32, 32);
+    top: 23%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+}
+.card-group > h2 {
+    font-family: 'poppins', sans-serif;
+    font-size: 27px;
+    color: white;
+    margin-top: 95px;
+    text-shadow: aqua 0.5px 1px 11px;
+    margin-left: 710px;
+    position: absolute;
+}
+.card-group[data-index="0"] .bigcard:nth-child(2){
+    background-image: url(Images/image-8-1024x604.png);
+    background-size: cover;
+    background-position: center 40%;
+    background-color: rgba(0, 0, 255, 0.226);
+    transform: translateX(-10%) rotate(-1deg);
+}
+.card-group[data-index="0"] .bigcard:nth-child(4){
+    background-image: url(Images/microsoft-word-resume-templates-500x333.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 192, 203, 0.226);
+    transform: rotate(2deg);
+}
+.card-group[data-index="0"] .bigcard:nth-child(6){
+    background-image: url(Images/ventajas-de-word.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(137, 43, 226, 0.205);
+    transform: translateX(-6%) rotate(-3deg);
+}
+.card-group[data-index="0"] .bigcard:nth-child(8){
+    background-image: url(Images/002-find-microsoft-word-templates-online-3540420-36cf1841b2f34ecbbb8295594f88b2a9.jpg);
+    background-size: cover;
+    background-position: center 70%;
+    background-color: rgba(255, 0, 0, 0.719);
+    transform: translate(10%, 3%) rotate(5deg);
+}
+.card-group[data-index="0"] .smallcard:nth-child(1){
+    background-image: url(Images/46f1c35d-7700-4834-b4ee-6208e807d400-898bb4a77378.webp);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="0"] .smallcard:nth-child(3){
+    background-image: url(Images/add-pizazz-page-numbers.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="0"] .smallcard:nth-child(5){
+    background-image: url(Images/Microsoft-Word-Blue-Mosaic-1.webp);
+    background-position: center;
+    background-size: cover;
+}
+.card-group[data-index="0"] .smallcard:nth-child(7){
+    background-image: url(Images/04aEQfZo5ubAYedn5M8l6p7-21..v1685731469.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* 2ndcard */
+.card-group[data-index="1"] .bigcard{
+    margin-top: -150px;
+}
+.card-group[data-index="1"] > h2 {
+    margin-top: -225px;
+}
+.card-group[data-index="1"]  .bigcard:nth-child(2){
+    background-image: url(Images/1_Hp6WX9w_tNRcRNK8f90P5w.png);
+    background-size: cover;
+    background-position: center 40%;
+    background-color: rgba(0, 0, 255, 0.226);
+    transform: translateX(-10%) rotate(-1deg);
+}
+.card-group[data-index="1"] .bigcard:nth-child(4){
+    background-image: url(Images/4573034_8b6f_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 192, 203, 0.226);
+    transform: rotate(2deg);
+}
+.card-group[data-index="1"] .bigcard:nth-child(6){
+    background-image: url(Images/kwigeWJ1J8PyTlqekOwYO69pkYfexnlKRnWKWTlZ.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(137, 43, 226, 0.205);
+    transform: translateX(-6%) rotate(-3deg);
+}
+.card-group[data-index="1"] .bigcard:nth-child(8){
+    background-image: url(Images/MS-Excel-Is-An-Essential-Tool.jpg);
+    background-size: cover;
+    background-position: center 70%;
+    background-color: rgba(255, 0, 0, 0.719);
+    transform: translate(10%, 3%) rotate(5deg);
+}
+.card-group[data-index="1"] .smallcard:nth-child(1){
+    background-image: url(Images/alison_courseware_intro_5637.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="1"] .smallcard:nth-child(3){
+    background-image: url(Images/688665.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="1"] .smallcard:nth-child(5){
+    background-image: url(Images/learn-excel-basics-introduction.png);
+    background-position: center;
+    background-size: cover;
+}
+.card-group[data-index="1"] .smallcard:nth-child(7){
+    background-image: url(Images/frontier-education-cover-images-1-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* 3rdcard */
+.card-group[data-index="2"] .bigcard{
+    margin-top: -480px;
+}
+.card-group[data-index="2"] > h2 {
+    margin-top: -555px;
+    margin-left: 670px;
+}
+.card-group[data-index="2"]  .bigcard:nth-child(2){
+    background-image: url(Images/Microsoft-Powerpoint.png);
+    background-size: cover;
+    background-position: center 40%;
+    background-color: rgba(0, 0, 255, 0.226);
+    transform: translateX(-10%) rotate(-1deg);
+}
+.card-group[data-index="2"] .bigcard:nth-child(4){
+    background-image: url(Images/Microsoft-Powerpoint.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 192, 203, 0.226);
+    transform: rotate(2deg);
+}
+.card-group[data-index="2"] .bigcard:nth-child(6){
+    background-image: url(Images/How_to_Reduce_Your_PowerPoint_PPT_File_Size_Way_Down.jpeg);
+    background-size: cover;
+    background-position: center 50%;
+    background-color: rgba(137, 43, 226, 0.205);
+    transform: translateX(-6%) rotate(-3deg);
+}
+.card-group[data-index="2"] .bigcard:nth-child(8){
+    background-image: url(Images/Microsoft-PowerPoint-BCG-Banner.png);
+    background-size: cover;
+    background-position: center 50%;
+    background-color: rgba(255, 0, 0, 0.719);
+    transform: translate(10%, 3%) rotate(5deg);
+}
+.card-group[data-index="2"] .smallcard:nth-child(1){
+    background-image: url(Images/Cara-Freeze-Powerpoint-Tanpa-Remote.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="2"] .smallcard:nth-child(3){
+    background-image: url(Images/SEO1485-thumb.png);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="2"] .smallcard:nth-child(5){
+    background-image: url(Images/turn-hollow-circle-chevrons-powerpoint.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.card-group[data-index="2"] .smallcard:nth-child(7){
+    background-image: url(Images/powerpoint-powerbi-integration-770x404.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+/* 4thcard */
+.card-group[data-index="3"] .bigcard{
+    margin-top: -805px;
+}
+.card-group[data-index="3"] > h2 {
+    margin-top: -879px;
+    margin-left: 680px;
+}
+.card-group[data-index="3"]  .bigcard:nth-child(2){
+    background-image: url(Images/N_Best_Free_Microsoft_OneNote_Templates_You_Must_Try-1024x576.jpg);
+    background-size: cover;
+    background-position: center 40%;
+    background-color: rgba(0, 0, 255, 0.226);
+    transform: translateX(-10%) rotate(-1deg);
+}
+.card-group[data-index="3"] .bigcard:nth-child(4){
+    background-image: url(Images/Banners-Blog-Septiembre-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 192, 203, 0.226);
+    transform: rotate(2deg);
+}
+.card-group[data-index="3"] .bigcard:nth-child(6){
+    background-image: url(Images/hq720.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(137, 43, 226, 0.205);
+    transform: translateX(-6%) rotate(-3deg);
+}
+.card-group[data-index="3"] .bigcard:nth-child(8){
+    background-image: url(Images/ecosystem-hero-Microsoft-OneNote.png);
+    background-size: cover;
+    background-position: center 70%;
+    background-color: rgb(204, 0, 255);
+    transform: translate(10%, 3%) rotate(5deg);
+}
+.card-group[data-index="3"] .smallcard:nth-child(1){
+    background-image: url(Images/Microsoft-OneNote.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="3"] .smallcard:nth-child(3){
+    background-image: url(Images/microsoft-onenote-sur-windows-11-recoit-un-nouveau-geste-de-gommescratch-out.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="3"] .smallcard:nth-child(5){
+    background-image: url(Images/Screen-Shot-2022-08-22-at-3.28.57-PM.png);
+    background-position: center;
+    background-size: cover;
+}
+.card-group[data-index="3"] .smallcard:nth-child(7){
+    background-image: url(Images/Microsoft_OneNote_headpic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* 5thcard */
+.card-group[data-index="4"] .bigcard{
+    margin-top: -1130px;
+}
+.card-group[data-index="4"] > h2 {
+    margin-top: -1199px;
+    margin-left: 760px;
+}
+.card-group[data-index="4"]  .bigcard:nth-child(2){
+    background-image: url(Images/andy-holmes-webyw4NsFPg-unsplash.jpg);
+    background-size: cover;
+    background-position: center 40%;
+    background-color: rgba(0, 0, 255, 0.226);
+    transform: translateX(-10%) rotate(-1deg);
+}
+.card-group[data-index="4"] .bigcard:nth-child(4){
+    background-image: url(Images/nathan-da-silva-k-rKfqSm4L4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 192, 203, 0.226);
+    transform: rotate(2deg);
+}
+.card-group[data-index="4"] .bigcard:nth-child(6){
+    background-image: url(Images/mohammad-rahmani-oXlXu2qukGE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(137, 43, 226, 0.205);
+    transform: translateX(-6%) rotate(-3deg);
+}
+.card-group[data-index="4"] .bigcard:nth-child(8){
+    background-image: url(Images/niels-kehl-6hpbjaAubDc-unsplash.jpg);
+    background-size: cover;
+    background-position: center 70%;
+    background-color: rgba(255, 0, 0, 0.719);
+    transform: translate(10%, 3%) rotate(5deg);
+}
+.card-group[data-index="4"] .smallcard:nth-child(1){
+    background-image: url(Images/branko-stancevic-GI1hwOGqGtE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="4"] .smallcard:nth-child(3){
+    background-image: url(Images/jackson-sophat-wUbNvDTsOIc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="4"] .smallcard:nth-child(5){
+    background-image: url(Images/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-group[data-index="4"] .smallcard:nth-child(7){
+    background-image: url(Images/caspar-camille-rubin-0qvBNep1Y04-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* 6thcard */
+.card-group[data-index="5"] .bigcard{
+    margin-top: -1455px;
+}
+.card-group[data-index="5"] > h2 {
+    margin-top: -1526px;
+    margin-left: 770px;
+}
+.card-group[data-index="5"]  .bigcard:nth-child(2){
+    background-image: url(Images/fong-NYcUkFJuxg0-unsplash.jpg);
+    background-size: cover;
+    background-position: center 40%;
+    background-color: rgba(0, 0, 255, 0.226);
+    transform: translateX(-10%) rotate(-1deg);
+}
+.card-group[data-index="5"] .bigcard:nth-child(4){
+    background-image: url(Images/markus-spiske-NsyU41QcsxM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 192, 203, 0.226);
+    transform: rotate(2deg);
+}
+.card-group[data-index="5"] .bigcard:nth-child(6){
+    background-image: url(Images/nick-karvounis-TkZYCXmrKK4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(137, 43, 226, 0.205);
+    transform: translateX(-6%) rotate(-3deg);
+}
+.card-group[data-index="5"] .bigcard:nth-child(8){
+    background-image: url(Images/css-illustration-2048x1881-mxaunblf.png);
+    background-size: cover;
+    background-position: center 70%;
+    background-color: rgb(0, 89, 255);
+    transform: translate(10%, 3%) rotate(5deg);
+}
+.card-group[data-index="5"] .smallcard:nth-child(1){
+    background-image: url(Images/maik-jonietz-_yMciiStJyY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="5"] .smallcard:nth-child(3){
+    background-image: url(Images/male-css-developer-working-on-code-6081854-5054699.webp);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="5"] .smallcard:nth-child(5){
+    background-image: url(Images/pankaj-patel-6JVlSdgMacE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-group[data-index="5"] .smallcard:nth-child(7){
+    background-image: url(Images/How-to-Practice-CSS--with-examples-.webp);
+    background-position: center;
+    background-size: cover;
+}
+.card-group:hover > .bigcard:nth-child(2){
+    transform: translate(-75%, 16%) rotate(-24deg);
+}
+.card-group:hover > .bigcard:nth-child(4){
+    transform: translate(-25%, 8%) rotate(-8deg);
+}
+.card-group:hover > .bigcard:nth-child(6){
+    transform: translate(25%, 8%) rotate(8deg);
+}
+.card-group:hover > .bigcard:nth-child(8){
+    transform: translate(75%, 16%) rotate(24deg);
+}
+.card-group:hover > .smallcard:nth-child(1){
+    transform: translate(200%, -160%) rotate(-15deg);
+}
+.card-group:hover > .smallcard:nth-child(3){
+    transform: translate(160%, 170%) rotate(15deg);
+}
+.card-group:hover > .smallcard:nth-child(5){
+    transform: translate(-200%, -170%) rotate(15deg);
+}
+.card-group:hover > .smallcard:nth-child(7){
+    transform: translate(-280%, 140%) rotate(-15deg);
+}
+/* 7thcard */
+.card-group[data-index="6"] .bigcard{
+    margin-top: -1775px;
+}
+.card-group[data-index="6"] > h2 {
+    margin-top: -1855px;
+    margin-left: 730px;
+}
+.card-group[data-index="6"]  .bigcard:nth-child(2){
+    background-image: url(Images/1_LyZcwuLWv2FArOumCxobpA.png);
+    background-size: cover;
+    background-position: center 40%;
+    background-color: rgba(0, 0, 255, 0.226);
+    transform: translateX(-10%) rotate(-1deg);
+}
+.card-group[data-index="6"] .bigcard:nth-child(4){
+    background-image: url(Images/1043496_a4a9_23.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 192, 203, 0.226);
+    transform: rotate(2deg);
+}
+.card-group[data-index="6"] .bigcard:nth-child(6){
+    background-image: url(Images/w9u60357jk4ozdho7urq.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(137, 43, 226, 0.205);
+    transform: translateX(-6%) rotate(-3deg);
+}
+.card-group[data-index="6"] .bigcard:nth-child(8){
+    background-image: url(Images/1692625134508-Where\ JavaScript\ is\ Used.jpg);
+    background-size: cover;
+    background-position: center 70%;
+    background-color: rgb(0, 89, 255);
+    transform: translate(10%, 3%) rotate(5deg);
+}
+.card-group[data-index="6"] .smallcard:nth-child(1){
+    background-image: url(Images/4LMd7fL.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="6"] .smallcard:nth-child(3){
+    background-image: url(Images/JAVASCRIPT.png);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="6"] .smallcard:nth-child(5){
+    background-image: url(Images/retina_1708x683_cover-comprehensive-guide-javascript-design-patterns-cf0c7c0e69d51d97044a8431da9175e3.png);
+    background-position: center;
+    background-size: cover;
+}
+.card-group[data-index="6"] .smallcard:nth-child(7){
+    background-image: url(Images/c94b995a-7e4c-4086-af60-f546128e6b15_5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-group:hover > .bigcard:nth-child(2){
+    transform: translate(-75%, 16%) rotate(-24deg);
+}
+.card-group:hover > .bigcard:nth-child(4){
+    transform: translate(-25%, 8%) rotate(-8deg);
+}
+.card-group:hover > .bigcard:nth-child(6){
+    transform: translate(25%, 8%) rotate(8deg);
+}
+.card-group:hover > .bigcard:nth-child(8){
+    transform: translate(75%, 16%) rotate(24deg);
+}
+.card-group:hover > .smallcard:nth-child(1){
+    transform: translate(200%, -160%) rotate(-15deg);
+}
+.card-group:hover > .smallcard:nth-child(3){
+    transform: translate(160%, 170%) rotate(15deg);
+}
+.card-group:hover > .smallcard:nth-child(5){
+    transform: translate(-200%, -170%) rotate(15deg);
+}
+.card-group:hover > .smallcard:nth-child(7){
+    transform: translate(-280%, 140%) rotate(-15deg);
+}
+/* 8thcard */
+.card-group[data-index="7"] .bigcard{
+    margin-top: -2099px;
+}
+.card-group[data-index="7"] > h2 {
+    margin-top: -2175px;
+    margin-left: 760px;
+}
+.card-group[data-index="7"]  .bigcard:nth-child(2){
+    background-image: url(Images/1_LyZcwuLWv2FArOumCxobpA.png);
+    background-size: cover;
+    background-position: center 40%;
+    background-color: rgba(0, 0, 255, 0.226);
+    transform: translateX(-10%) rotate(-1deg);
+}
+.card-group[data-index="7"] .bigcard:nth-child(4){
+    background-image: url(Images/unnamed.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 192, 203, 0.226);
+    transform: rotate(2deg);
+}
+.card-group[data-index="7"] .bigcard:nth-child(6){
+    background-image: url(Images/jquery-development_og.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(137, 43, 226, 0.205);
+    transform: translateX(-6%) rotate(-3deg);
+}
+.card-group[data-index="7"] .bigcard:nth-child(8){
+    background-image: url(Images/jquery-detect-scroll-up-scroll-down1.jpg);
+    background-size: cover;
+    background-position: center 70%;
+    background-color: rgb(0, 89, 255);
+    transform: translate(10%, 3%) rotate(5deg);
+}
+.card-group[data-index="7"] .smallcard:nth-child(1){
+    background-image: url(Images/jquery-logo-blue.webp);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="7"] .smallcard:nth-child(3){
+    background-image: url(Images/image.png);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="7"] .smallcard:nth-child(5){
+    background-image: url(Images/jquery-is-not-defined1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-group[data-index="7"] .smallcard:nth-child(7){
+    background-image: url(Images/jQuery-Alternative.png);
+    background-position: center;
+    background-size: cover;
+}
+.card-group:hover > .bigcard:nth-child(2){
+    transform: translate(-75%, 16%) rotate(-24deg);
+}
+.card-group:hover > .bigcard:nth-child(4){
+    transform: translate(-25%, 8%) rotate(-8deg);
+}
+.card-group:hover > .bigcard:nth-child(6){
+    transform: translate(25%, 8%) rotate(8deg);
+}
+.card-group:hover > .bigcard:nth-child(8){
+    transform: translate(75%, 16%) rotate(24deg);
+}
+.card-group:hover > .smallcard:nth-child(1){
+    transform: translate(200%, -160%) rotate(-15deg);
+}
+.card-group:hover > .smallcard:nth-child(3){
+    transform: translate(160%, 170%) rotate(15deg);
+}
+.card-group:hover > .smallcard:nth-child(5){
+    transform: translate(-200%, -170%) rotate(15deg);
+}
+.card-group:hover > .smallcard:nth-child(7){
+    transform: translate(-280%, 140%) rotate(-15deg);
+}
+/* 9thcard */
+.card-group[data-index="8"] .bigcard{
+    margin-top: -2429px;
+}
+.card-group[data-index="8"] > h2 {
+    margin-top: -2495px;
+    margin-left: 765px;
+}
+.card-group[data-index="8"]  .bigcard:nth-child(2){
+    background-image: url(Images/representations-user-experience-interface-design-3-1.webp);
+    background-size: cover;
+    background-position: center 40%;
+    background-color: rgba(0, 0, 255, 0.226);
+    transform: translateX(-10%) rotate(-1deg);
+}
+.card-group[data-index="8"] .bigcard:nth-child(4){
+    background-image: url(Images/16794130241111.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 192, 203, 0.226);
+    transform: rotate(2deg);
+}
+.card-group[data-index="8"] .bigcard:nth-child(6){
+    background-image: url(Images/0_M_OaWxU_CEn_HPII.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(137, 43, 226, 0.205);
+    transform: translateX(-6%) rotate(-3deg);
+}
+.card-group[data-index="8"] .bigcard:nth-child(8){
+    background-image: url(Images/UI-UX-Design.jpg);
+    background-size: cover;
+    background-position: center 70%;
+    background-color: rgb(0, 89, 255);
+    transform: translate(10%, 3%) rotate(5deg);
+}
+.card-group[data-index="8"] .smallcard:nth-child(1){
+    background-image: url(Images/olaf-val-UTk9cXzYWAg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="8"] .smallcard:nth-child(3){
+    background-image: url(Images/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-group[data-index="8"] .smallcard:nth-child(5){
+    background-image: url(Images/khai-niem-ui-ux.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-group[data-index="8"] .smallcard:nth-child(7){
+    background-image: url(Images/UI-UX.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-group:hover > .bigcard:nth-child(2){
+    transform: translate(-75%, 16%) rotate(-24deg);
+}
+.card-group:hover > .bigcard:nth-child(4){
+    transform: translate(-25%, 8%) rotate(-8deg);
+}
+.card-group:hover > .bigcard:nth-child(6){
+    transform: translate(25%, 8%) rotate(8deg);
+}
+.card-group:hover > .bigcard:nth-child(8){
+    transform: translate(75%, 16%) rotate(24deg);
+}
+.card-group:hover > .smallcard:nth-child(1){
+    transform: translate(200%, -160%) rotate(-15deg);
+}
+.card-group:hover > .smallcard:nth-child(3){
+    transform: translate(160%, 170%) rotate(15deg);
+}
+.card-group:hover > .smallcard:nth-child(5){
+    transform: translate(-200%, -170%) rotate(15deg);
+}
+.card-group:hover > .smallcard:nth-child(7){
+    transform: translate(-280%, 140%) rotate(-15deg);
+}
